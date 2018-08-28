@@ -1,15 +1,25 @@
 /* Styles go here */
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e8e8e8;
+}
 
 .contenedor {
   display: grid;
   grid-template-columns: 1;
   grid-gap: 10px;
   height: 100%;
+
 }
 
 .cabecera {
+    height: 50px;
     display: flex;
     background-color: #fb0;
     justify-content: space-between;
@@ -17,32 +27,81 @@
     flex-wrap: nowrap;
 }
 
+.menu1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px; 
+}
+
+.menu1 > #menu {
+  margin-right: 50px;
+}
+
+#titleNavbar{
+  margin-left: 0px;
+  font-size: 18px;
+  font-family: 'Product Sans',Arial,sans-serif;
+}
+
+.cabecera .iconsHeader {
+  margin-right: 15px;
+}
+
+.iconsHeader > #search {
+  margin-right: 10px;
+}
+
+.main {
+  margin: 10px 16px 10px 16px;
+}
 
 .addNota {
+  padding-top: 7px;
+  padding-bottom: 7px;
   display: flex;
   align-content: space-between;
+  align-items: center;
   orientation: row;
   margin: 0;
 }
 
 .addNota > input {
+  background-color: rgb(250, 250, 250);
   width: 70%;
   border: none;
   padding-left: 15px; 
-  font-size: 16px;
+  font-size: 18px;
+  outline: 0px;
+}
+
+.addNota  > input:hover {
+  height: 80px;
 }
 
 .iconsAddNota {
-  margin-left: 60px;
+  display: inline-block; 
 }
+
+.iconAddnota2 {
+  margin: 0px 10px 0px 10px;
+}
+
 
 .notas {
   position: relative;
 }
 
+.nota, .addNota {
+  background-color: rgb(250, 250, 250);
+}
+
 .nota {
-  margin: 8px;  
-  background-color: grey;
+  margin: 16px 0px 16px 0px;  
+  font-size: 16px;
+  font-family: 'Roboto Slab','Times New Roman',serif;
+  padding: 12px 15px 15px 15px;
+  height: 100px;
 }
 
 
