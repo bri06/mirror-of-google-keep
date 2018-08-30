@@ -7,37 +7,83 @@
   }
 
   .cabecera {
-    grid-column: 4 / 1 ;
+    grid-column: 1 / 4;
     grid-row: 1;
+    display: flex;
+    align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1;
   }
 
-  #tituloMenu strong {
-    display: inline;
+  #tituloMenu strong, #view_agenda, #apps, #notifications, #inputSearch {
+    display: inline-block;
+  }
+
+  /* #tituloMenu {
+    margin-right: 5px;
+    padding-right: 5px;
+  } */
+
+  .barraBusqueda {
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.04);
+    width: 700px;
+    margin-left: 30px;
+    color: black;
+    padding: 8px 8px 8px 8px;
+  }
+
+  .barraBusqueda #inputSearch{
+    background: transparent;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    outline: 0px;
+  }
+
+  .iconsHeader-1 {
+    display: flex;
+    margin-left: 120px;
+  }
+
+  .iconsheader-2 {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .iconsHeader-1 > .material-icons {
+    margin-right: 20px;
+  }
+
+  .iconsheader-2 > .material-icons {
+    margin-right: 20px;
   }
 
   .main {
-    grid-column: 2 / 4;
+    grid-column: 2 / span 4;
     grid-row: 2 / 5;
     display: grid;
     padding-right: 20px;
+    align-content: center;
+    margin: 0px 16px 10px 16px;
+    overflow: hidden;
 
   }
 
   .addNota {
     height: 50px;
     display: flex;
+    margin: 0 auto; 
     align-content: space-between;
     align-items: center;
     orientation: row;
-    margin: 0;
+    margin-bottom: 25px;
   }
 
   .iconsAddNota {
-    position: relative;
     margin-left: 140px;
   }
 
@@ -73,6 +119,7 @@
 
   .litem:hover {
     background-color: #C0C0C0;
+    cursor: pointer;
   }
 
   .aside ul {
@@ -134,6 +181,7 @@
 
   .footerAside a:hover {
     color: black;
+    cursor: pointer;
   }
 
  }
