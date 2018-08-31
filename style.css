@@ -19,6 +19,9 @@ body {
 }
 
 .cabecera {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     height: 66px;
     width: 100%;
     display: flex;
@@ -36,35 +39,34 @@ body {
   margin-left: 10px; 
 }
 
-.menu1  #menu {
+#menu {
   margin-right: 30px;
   color: black;
   opacity: .54;
   cursor: pointer;
 }
 
-.menu1  #menu:hover {
+#menu:hover {
   background-color: #999;
 
 }
 
 #tituloMenu {
   margin-left: 0px;
+  margin-right: 60px;
   font-size: 22px;
   font-family: 'Product Sans',Arial,sans-serif;
   cursor: pointer;
 }
 
-.iconsHeader {
-  display: flex;
-  margin-right: 15px;
+#search {
+  margin-left: 80px;
 }
 
-.iconsHeader #search {
-  margin-right: 10px;
+#refresh {
 }
 
-.iconsHeader #search, #refresh {
+#search, #refresh {
   cursor: pointer;  
 }
 
@@ -79,7 +81,7 @@ body {
 .main {
   grid-row: 2 / 5;
   align-content: center;
-  margin: 10px 16px 10px 16px;
+  margin: 69px 16px 10px 16px;
 }
 
 .addNota {
