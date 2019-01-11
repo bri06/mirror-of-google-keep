@@ -1,193 +1,63 @@
- @media (min-width: 800px) {
-  .contenedor { 
+@media (min-width: 630px) {
+  .notes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-top: 65px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .cabecera {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
-
+  .menuLeft > img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
   }
 
-  #tituloMenu strong, #view_agenda, #apps, #notifications, #inputSearch {
-    display: inline-block;
+  .menuRight i:nth-child(3) {
+    display: inline;
   }
+}
 
-  .barraBusqueda {
+@media (min-width: 780px) {
+  .search {
     display: flex;
     align-items: center;
     background: rgba(0,0,0,0.04);
-    width: 700px;
-    margin-left: 35px;
-    margin-right: 50px;
-    color: black;
-    padding: 8px 0px 8px 40px;
+    padding: 8px 8px 8px 10px;
+    border-radius: 8px;
   }
 
-  #tituloMenu {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin-right: 0;
-  }
-
-  #tituloMenu strong {
-    margin-right: 5px;
-  }
-
-  .barraBusqueda #inputSearch{
+  .search .inputSearch {
     background: transparent;
     border: none;
-    padding: 10px 0px 10px 0px;
-    width: 100%;
     outline: 0px;
+    padding: 0px 50px 0px 15px;
   }
 
-  .iconsHeader-1 {
-    display: flex;
-    margin-left: 120px;
-    padding-left: 20px;
+  .menuRight i:first-child {
+    display: none;
+  }
+}
+
+@media (min-width: 920px) {
+  .notes {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .iconsheader-2 {
-    display: flex;
-    margin-right: 10px;
+  .search {
+    padding-right: 180px;
   }
+}
 
-  .iconsHeader-1 > .material-icons {
-    margin-right: 20px;
-  }
-
-  .iconsheader-2 > .material-icons {
-    margin-right: 20px;
-  }
-
-  .main {
-    grid-column: 2 / span 4;
-    grid-row: 2 / 5;
+@media (min-width: 1028px) {
+  .grid-container {
     display: grid;
-    padding-right: 20px;
-    align-content: center;
-    margin: 5px 16px 10px 16px;
-    overflow: hidden;
+    grid-gap: 56px;
+    grid-template-areas: 
+      "header header"
+      "aside main"
   }
 
-  .addNota {
-    height: 50px;
-    display: flex;
-    margin: 0 auto; 
-    align-content: space-between;
-    align-items: center;
-    orientation: row;
-    margin-bottom: 25px;
+  .grid-aside {
+    grid-area: aside;
+    display: block;
   }
-
-  .iconsAddNota {
-    margin-left: 140px;
-  }
-
-  .notas {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-  }
-
-  .nota {
-    margin: 0;  
-  }
-
-  .aside {
-    grid-column: 1 / 4;
-    grid-row: 2 / 5;
-    display: inline-block;
-    overflow: auto;
-    padding-left: 5px;  
-    height: 99%;
-    width: 25%;
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-  }
-
-  .litem {
-    margin-left: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-  }
-
-  .litem:hover {
-    background-color: #C0C0C0;
-    cursor: pointer;
-  }
-
-  .aside ul {
-    list-style:none
-    
-  }
-
-  .litem i {
-    margin-right: 30px; 
-  }
-
-  .aside .recordatorios {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
-  }
-
-  .caja1-aside {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: nowrap;  
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-
-  .caja1-aside #etiquetas {
-    margin-left: 40px;
-    padding: 10px 5px 10px 5px;
-  }
-
-  .caja1-aside #editar {
-    margin-right: 40px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .aside .crearEtiqueta, .aside .papelera {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
-  }
-
-  .footerAside{
-    display: grid;
-    grid-template-columns: 1;
-    margin: 12px 15px 12px 24px;
-    background-color: inherit;
-    padding: 30px 0 10px 0;
-    
-  }
-
-  .footerAside > div {
-    margin-bottom: 15px;
-  }
-
-  .footerAside a {
-    text-decoration: none;
-    color: #9c9c9c;
-  }
-
-  .footerAside a:hover {
-    color: black;
-    cursor: pointer;
-  }
-
- }
+}
