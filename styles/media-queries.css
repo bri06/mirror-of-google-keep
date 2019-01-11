@@ -11,6 +11,7 @@
     grid-row: 1;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     width: 100%;
 
   }
@@ -24,15 +25,17 @@
     align-items: center;
     background: rgba(0,0,0,0.04);
     width: 700px;
-    margin-left: 60px;
+    margin-left: 35px;
+    margin-right: 50px;
     color: black;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0px 8px 40px;
   }
 
   #tituloMenu {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin-right: 0;
   }
 
   #tituloMenu strong {
@@ -42,7 +45,7 @@
   .barraBusqueda #inputSearch{
     background: transparent;
     border: none;
-    padding: 10px 0px 10px 5px;
+    padding: 10px 0px 10px 0px;
     width: 100%;
     outline: 0px;
   }
@@ -50,6 +53,7 @@
   .iconsHeader-1 {
     display: flex;
     margin-left: 120px;
+    padding-left: 20px;
   }
 
   .iconsheader-2 {

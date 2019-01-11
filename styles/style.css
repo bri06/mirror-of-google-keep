@@ -1,0 +1,113 @@
+:root {
+  --principal-font: 'Roboto Slab','Times New Roman',serif;
+  --principal-font-size: .875rem;
+}
+/*-------------------------------------------- Mobile version --------------------------------------------*/
+
+.grid-container {
+  display: grid;
+  grid-gap: 56px;
+  grid-template-areas: 
+    "header"
+    "main"
+}
+
+.material-icons {
+  color: grey;
+}
+
+/*-------------------------------------------- Header styles --------------------------------------------*/
+.grid-header {
+  grid-area: header;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  border-bottom: 1px solid #dadce0;
+  background-color: #fff;
+}
+
+.menuLeft, .menuRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuLeft span {
+  opacity: .54;
+  font-family: 'Product Sans',Arial,sans-serif;
+  font-size: 1.375rem;
+}
+
+.menuRight {
+  padding-right: 10px;
+  width: 150px;
+}
+
+.menuLeft .material-icons {
+  padding-left: 15px;
+  margin-right: 20px;
+}
+
+.menuLeft > img, .menuRight i:nth-child(3), .search {
+  display: none;
+}
+
+.perfilPhoto {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/*-------------------------------------------- Aside Styles --------------------------------------------*/
+aside {
+  display: hidden;
+}
+
+/* Main styles */
+.grid-main {
+  grid-area: main;
+  width: 100%;
+}
+
+.addNota {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  border-radius: 4px;
+  margin: 16px 10px 10px 10px;
+  padding: 0 15px;
+  border: 1px solid #dadce0;
+  box-shadow: 1px 1px 4px #999;
+  font-family: var(--principal-font);
+  
+}
+
+.addNota input {
+  width: 50%;
+  outline: 0px;
+  border: none;
+  font-size: var(--principal-font-size);
+}
+
+.iconsAddNota {
+  display: flex;
+  justify-content: space-around;
+  width: 180px;
+}
+
+.note {
+  margin: 15px 10px 10px 10px;  
+  font-size: 16px;
+  font-family: var(--principal-font);
+  font-size: var(--principal-font-size);
+  padding: 12px 15px 15px 15px;
+  height: 80px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+}
