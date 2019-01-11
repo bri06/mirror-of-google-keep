@@ -1,108 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="script.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"  href="media-queries.css">
-
+  <link rel="icon" href="./assets/keep-image.png">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media-queries.css">
+  <title>Google Keep</title>
 </head>
 
 <body>
-  <div class="contenedor">
-    <header class="cabecera">
-        <div class="menu1">
-          <i class="material-icons" id="menu">menu</i>
-          <p id="tituloMenu"><strong>Google</strong> Keep </p>
-          <form class="barraBusqueda">
-              <i class="material-icons" id="search">search</i>
-              <input id="inputSearch" type="text" placeholder="Busca lo que quieras">
-          </form>
-        </div>
-        <div class="iconsHeader-1">
-          <i class="material-icons" id="refresh">refresh</i>
-          <i class="material-icons" id="view_agenda">view_agenda</i>
-        </div>
-        <div class="iconsheader-2">
-          <i class="material-icons" id="apps">apps</i>
-          <i class="material-icons" id="notifications">notifications</i>
-        </div>
+  <div class="grid-container">
+    <header class="grid-header">
+      <div class="menuLeft">
+        <i class="material-icons">menu</i>
+        <img src="./assets/keep-image.png" alt="google keep">
+        <span>Keep</span>
+      </div>
+      <form class="search">
+        <i class="material-icons" id="search">search</i>
+        <input class="inputSearch" type="text" placeholder="Busca lo que quieras">
+      </form>
+      <div class="menuRight">
+        <i class="material-icons">search</i>
+        <i class="material-icons">refresh</i>
+        <i class="material-icons">view_agenda</i>
+        <i class="material-icons">settings</i>
+        <img class="perfilPhoto" src="./assets/kasper.jpg" alt="profile picture">
+      </div>
     </header>
-    <aside class="aside sidenav">
+    <aside class="grid-aside">
       <ul>
-          <li class="litem"><i class="material-icons">notes</i>Notas</p></li>
-          <li class="litem recordatorios"><i class="material-icons ">touch_app</i> Recordatorios </li>
-          <li>
-            <div class="caja1-aside">
-              <p id="etiquetas"> Etiquetas </p>
-              <p class="litem" id="editar"> EDITAR </p>
-              </div>
-          </li>
-          <li class="crearEtiqueta litem"><i class="material-icons">create</i> Crear etiqueta </li>
-          <li class="litem"><i class="material-icons">archive</i> Archivar </li>
-          <li class="papelera litem"><i class="material-icons">delete</i> Papelera </li>
-          <li class="litem"><i class="material-icons">settings</i> ajustes </li>
-          <li class="litem"><i class="material-icons">add_comment</i> Enviar comentarios </li>
-          <li class="litem"><i class="material-icons">help</i> Ayuda </li>
-          <li class="litem"><i class="material-icons">devices_other</i> Descarga de aplicaciones </li>
-          <li class="litem"><i class="material-icons">keyboard</i> Combinaciones de teclas </li>
-          <div class="footerAside">
-            <div>
-              <a href="#">Privacidad</a>
-              &nbsp;·&nbsp;
-              <a href="#">Condiciones</a>
-            </div>
-              <a href="#">Licencias de código abierto</a>
-          </div>
-        </ul>
-      </aside>
-    <div class="main">
+        <li><i class="material-icons">notes</i>Notas</li>
+      </ul>
+    </aside>
+    <main class="grid-main">
       <div class="addNota">
-          <input type="text" placeholder="Añade una nota...">
-          <div class="iconsAddNota">
-            <i class="material-icons iconAddnota1">list</i>
-            <i class="material-icons iconAddnota2">image </i>
-            <i class="material-icons iconAddnota3">create </i>
-          </div>
+        <input type="text" placeholder="Añade una nota...">
+        <div class="iconsAddNota">
+          <i class="material-icons">assignment_turned_in</i>
+          <i class="material-icons">create </i>
+          <i class="material-icons">image </i>
+        </div>
       </div>
-      <div class="notas">
-        <div class="nota">NOTA 1</div>
-        <div class="nota">NOTA 2</div>
-        <div class="nota">NOTA 3</div>
-        <div class="nota">NOTA 4</div>
-        <div class="nota">NOTA 5</div>
-        <div class="nota">NOTA 6</div>
-        <div class="nota">NOTA 7</div>
-        <div class="nota">NOTA 8</div>
-        <div class="nota">NOTA 9</div>
-        <div class="nota">NOTA 10</div>
-        <div class="nota">NOTA 11</div>
-        <div class="nota">NOTA 12</div>
-        <div class="nota">NOTA 7</div>
-        <div class="nota">NOTA 8</div>
-        <div class="nota">NOTA 9</div>
-        <div class="nota">NOTA 10</div>
-        <div class="nota">NOTA 11</div>
-        <div class="nota">NOTA 12</div>
-        <div class="nota">NOTA 7</div>
-        <div class="nota">NOTA 8</div>
-        <div class="nota">NOTA 9</div>
-        <div class="nota">NOTA 10</div>
-        <div class="nota">NOTA 11</div>
-        <div class="nota">NOTA 12</div>
-        <div class="nota">NOTA 7</div>
-        <div class="nota">NOTA 8</div>
-        <div class="nota">NOTA 9</div>
-        <div class="nota">NOTA 10</div>
-        <div class="nota">NOTA 11</div>
-        <div class="nota">NOTA 12</div>
+      <div class="notes">
+        <div class="note">NOTA 1</div>
+        <div class="note">NOTA 2</div>
+        <div class="note">NOTA 3</div>
+        <div class="note">NOTA 4</div>
+        <div class="note">NOTA 5</div>
+        <div class="note">NOTA 6</div>
+        <div class="note">NOTA 7</div>
+        <div class="note">NOTA 8</div>
+        <div class="note">NOTA 9</div>
+        <div class="note">NOTA 10</div>
+        <div class="note">NOTA 11</div>
+        <div class="note">NOTA 12</div>
+        <div class="note">NOTA 13</div>
       </div>
-    </div>  
+    </main>
   </div>
 </body>
 
