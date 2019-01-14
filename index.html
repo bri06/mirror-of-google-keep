@@ -16,9 +16,9 @@
 
 <body>
   <div class="grid-container">
-    <header class="grid-header">
+    <header>
       <div class="menuLeft">
-        <i class="material-icons">menu</i>
+        <i class="material-icons emphasis-icon">menu</i>
         <img src="./assets/keep-image.png" alt="google keep">
         <span>Keep</span>
       </div>
@@ -26,20 +26,45 @@
         <i class="material-icons" id="search">search</i>
         <input class="inputSearch" type="text" placeholder="Busca lo que quieras">
       </form>
-      <div class="menuRight">
-        <i class="material-icons">search</i>
-        <i class="material-icons">refresh</i>
-        <i class="material-icons">view_agenda</i>
-        <i class="material-icons">settings</i>
-        <img class="perfilPhoto" src="./assets/kasper.jpg" alt="profile picture">
+      <div class="secondMenu">
+        <div class="menuRight">
+          <i class="material-icons">search</i>
+          <i class="material-icons">refresh</i>
+          <i class="material-icons">view_agenda</i>
+          <i class="material-icons">settings</i>
+        </div>
+        <div class="latestIconsHeader">
+          <i class="material-icons emphasis-icon">apps</i>
+          <i class="material-icons emphasis-icon">notifications</i>
+          <img class="perfilPhoto" src="./assets/kasper.jpg" alt="profile picture">
+        </div>
       </div>
     </header>
-    <aside class="grid-aside">
-      <ul>
-        <li><i class="material-icons">notes</i>Notas</li>
-      </ul>
+    <aside>
+      <div>
+        <ul>
+          <li class="focus"><i class="material-icons">notes</i>Notas</li>
+          <li><i class="material-icons">notification_important</i> Recordatorios</li>
+        </ul>
+        <ul>
+          <span>ETIQUETAS</span>
+          <li><i class="material-icons">edit</i>Editar etiquetas</li>
+        </ul>
+        <ul>
+          <li><i class="material-icons">archive</i>Archivar</li>
+          <li><i class="material-icons">delete</i>Papelera</li>
+        </ul>
+      </div>
+      <div class="footerAside">
+          <div>
+            <a href="https://policies.google.com/privacy" target="_blank">Privacidad</a>
+            &nbsp;·&nbsp;
+            <a href="https://policies.google.com/terms" target="_blank">Condiciones</a>
+          </div>
+          <a href="http://ssl.gstatic.com/keep/open-source_licenses.txt" target="_blank">Licencias de código abierto</a>
+      </div>
     </aside>
-    <main class="grid-main">
+    <main>
       <div class="addNota">
         <input type="text" placeholder="Añade una nota...">
         <div class="iconsAddNota">
