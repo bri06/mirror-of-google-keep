@@ -1,21 +1,26 @@
 @media (min-width: 630px) {
+  main {
+    padding: 30px 0px 30px 0px;
+  }
+
   .notes {
     display: grid;
     grid-template-columns: repeat(2, 240px);
+    padding-top: 25px;
   }
 
-  .addNota {
+  .add-note {
     width: var(--width-addNota-twoColumns);
   }
 
-  .menuLeft > img {
+  .menu-logo > img {
     display: block;
     width: 40px;
     height: 40px;
     padding-right: 10px;
   }
 
-  .menuRight i:nth-child(3) {
+  .principal-icons i:nth-child(3) {
     display: inline;
   }
 }
@@ -36,7 +41,7 @@
     padding: 0px 50px 0px 15px;
   }
 
-  .menuRight i:first-child {
+  .principal-icons i:first-child {
     display: none;
   }
 }
@@ -50,14 +55,14 @@
     padding-right: 180px;
   }
 
-  .addNota {
+  .add-note {
     width: var(--width-addNota-max);
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 
 @media (min-width: 1035px) {
-  .grid-container {
+  body {
     display: grid;
     grid-template-columns: 280px 1fr;
     grid-template-areas: 
@@ -65,28 +70,22 @@
       "aside main";
   }
 
-  main {
-    /* overflow-y: scroll; */
-  }
-
-  .latestIconsHeader i {
+  .profile-icons i {
     display: inline;
   }
 
-  .latestIconsHeader {
-    display: flex;
+  .profile-icons {
     justify-content: space-between;
-    align-items: center;
     width: 130px;
     padding: 10px 10px;
   }
 
-  .menuRight {
+  .principal-icons {
     width: 150px;
     padding-right: 30px;
   }
 
-  .addNota {
+  .add-note {
     width: var(--width-addNota-twoColumns);
   }
 
@@ -97,12 +96,10 @@
 
   aside {
     grid-area: aside;
-    /* position: fixed; */ 
-    /* width: auto; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 12px;
+    padding-top: 15px;
   }
 
   aside ul li {
@@ -139,20 +136,20 @@
     background-color: #f4f5f8;
   }
 
-  .footerAside {
-    padding: 0 30px;
+  footer {
+    font-family: var(--principal-font);
+    font-size: .6875rem;
+    padding: 0px 30px 20px 30px;
     line-height: 30px;
   }
 
-  .footerAside a:hover {
+  footer a:hover {
     color: black;
   }
 
-  .footerAside, .footerAside a {
+  footer a {
     text-decoration: none;
     color: #9c9c9c;
-    font-family: var(--principal-font);
-    font-size: .6875rem;
   }
 }
 
@@ -162,12 +159,12 @@
     grid-template-columns: repeat(3, 240px);
   }
 
-  .addNota {
+  .add-note {
     width: var(--width-addNota-max);
   }
 }
 
-@media (min-width: 1370px) {
+@media (min-width: 1360px) {
   .notes {
     display: grid;
     grid-template-columns: repeat(4, 240px);
